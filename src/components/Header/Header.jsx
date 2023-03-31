@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <div className="App">
-        <div className="navbar ps-10 pe-10">
+        <div className="navbar ps-10 pe-10 container mx-auto">
   <div className="flex-1">
     <a className="text-2xl font-bold">Knowledge Cafe</a>
   </div>

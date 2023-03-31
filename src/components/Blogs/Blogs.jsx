@@ -1,24 +1,22 @@
 import React, { useEffect, useState } from 'react';
-
+import Element from '../Element/Element';
 const Blogs = () => {
-    const [blogs, setblogs] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect( () => {
         fetch('data.json')
         .then(res => res.json())
-        .then(data => setblogs(data))
+        .then(data => setData(data))
     }, [])
     return (
-        <div className='flex justify-between p-6 flex-col md:flex-row'>
-            <div className="card bg-base-100 shadow-xl mb-4">
-  <figure><img src="" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">{blogs.length}</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
+        <div className='flex justify-between p-6 flex-col md:flex-row container mx-auto'>
+            <div className="">
+                {
+                    data.map(element => <Element 
+                    key={element.id}
+                    element = {element}>
+                    </Element>)
+                }
 </div>
             <div>
             <div className='bg-purple-100 rounded-lg text-center p-4 outline-purple-600 outline'>
