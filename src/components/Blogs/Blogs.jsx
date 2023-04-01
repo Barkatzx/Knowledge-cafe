@@ -13,11 +13,24 @@ const Blogs = () => {
       .then(data => setData(data))
   }, []);
 
+  // const handleAddCart = (element) => {
+  //   setBookmarks(bookmarks => [...bookmarks, element]
+  //   )
+  //   toast.success('Successfully Bookmark Added');
+  // };
+
   const handleAddCart = (element) => {
-    setBookmarks(bookmarks => [...bookmarks, element]
-    )
-    toast.success('Successfully Bookmark Added');
+    // Check if the element already exists in the bookmarks array
+    const isAlreadyBookmarked = bookmarks.some((bookmark) => bookmark.id === element.id);
+  
+    if (isAlreadyBookmarked) {
+      toast.error('You have already bookmarked this blog.');
+    } else {
+      setBookmarks(bookmarks => [...bookmarks, element]);
+      toast.success('Successfully Bookmark Added');
+    }
   };
+  
 
   return (
     <div className='flex gap-10 justify-between p-6 flex-col md:flex-row container mx-auto'>
