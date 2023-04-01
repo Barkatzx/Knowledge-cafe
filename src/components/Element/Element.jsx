@@ -5,6 +5,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Element = (props) => {
     const {thumnail, author, name, title, date, read, tags} = props.element;
 const handleAddCart = props.handleAddCart;
+const handleAddCart2 = props.handleAddCart2;
 
     return (
         <div className='mb-8 container mx-auto'>
@@ -20,7 +21,7 @@ const handleAddCart = props.handleAddCart;
     <div className='text-xl font-semibold'>{name}</div>
     <div className=''>{date}</div></div>
   </div>
-  <div className='text-lg mt-2 pr-10'>{read} minutes read  <FontAwesomeIcon onClick={() => handleAddCart(props.element)} className='cursor-pointer' icon={faBookmark} /></div>
+  <div className='text-lg mt-2 pr-10'>{read} minutes read  <FontAwesomeIcon onClick={() => handleAddCart (props.element)} className='cursor-pointer' icon={faBookmark} /></div>
         </div>
         
         <div className='mt-3 text-3xl font-semibold'>{title}</div>
