@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Element from '../Element/Element';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
   const [data, setData] = useState([]);
@@ -13,7 +15,9 @@ const Blogs = () => {
 
   const handleAddCart = (element) => {
     setBookmarks(bookmarks => [...bookmarks, element]
-    )};
+    )
+    toast.success('Successfully Bookmark Added');
+  };
 
   return (
     <div className='flex gap-10 justify-between p-6 flex-col md:flex-row container mx-auto'>
@@ -25,6 +29,7 @@ const Blogs = () => {
             handleAddCart={handleAddCart}
           />
         ))}
+        <ToastContainer />
       </div>
       <div>
         <div className='bg-purple-100 rounded-lg text-center p-4 outline-purple-600 outline'>
