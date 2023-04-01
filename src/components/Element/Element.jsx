@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Element = (props) => {
     const {thumnail, author, name, title, date, read, tags} = props.element;
@@ -16,7 +18,7 @@ const Element = (props) => {
     <div className='text-xl font-semibold'>{name}</div>
     <div className=''>{date}</div></div>
   </div>
-  <div className='text-lg mt-2'>{read}</div>
+  <div className='text-lg mt-2 pr-10'>{read}  <FontAwesomeIcon icon={faBookmark} /></div>
         </div>
         
         <div className='mt-3 text-3xl font-semibold'>{title}</div>
