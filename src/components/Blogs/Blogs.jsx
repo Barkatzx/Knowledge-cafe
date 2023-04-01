@@ -9,7 +9,7 @@ const Blogs = () => {
         .then(data => setData(data))
     }, [])
     return (
-        <div className='flex justify-between p-6 flex-col md:flex-row container mx-auto'>
+        <div className='flex gap-10 justify-between p-6 flex-col md:flex-row container mx-auto'>
             <div className="">
                 {
                     data.map(element => <Element 
@@ -23,22 +23,14 @@ const Blogs = () => {
                 <h2 className='text-lg font-semibold text-purple-600'>Spent time on read : 0 min</h2>
             </div>
     
-            <div className="overflow-x-auto mt-5">
-  <table className="table w-full rounded-2xl">
-  <thead>
-      <tr>
-        <th className='text-center text-lg font-bold'>Bookmark Blogs:</th>
-      </tr>
-    </thead>
-    <tbody>
-      {/* row 1 */}
-      <tr>
-        <td className='text-xl font-semibold'>How to get your first job as a self-taught programmer
-</td>
-      </tr>
-    </tbody>
-  </table>
+            <div className="mt-5 bg-slate-300 rounded-lg p-2 outline outline-slate-600">
+        <h2 className='text-center text-2xl font-bold'>Bookmark Blogs:</h2>
+        <div className='text-xl font-semibold bg-white p-3 rounded-lg mt-2'>How to get your first job as a self-taught programmer
 </div>
+        <div className='text-xl font-semibold bg-white p-3 rounded-lg mt-2'>How to get your first job as a self-taught programmer
+</div>
+</div>
+
             </div>
         </div>
     );

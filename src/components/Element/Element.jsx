@@ -6,7 +6,7 @@ const Element = (props) => {
     const {thumnail, author, name, title, date, read, tags} = props.element;
     return (
         <div className='mb-8 container mx-auto'>
-              <img className='rounded-2xl' src={thumnail} />
+              <img className='rounded-2xl w-full' src={thumnail} />
               <div className='flex justify-between pt-4'>
   <div className="flex items-center">
   <div className="avatar">
