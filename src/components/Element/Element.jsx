@@ -21,11 +21,11 @@ const handleAddCart2 = props.handleAddCart2;
     <div className='text-xl font-semibold'>{name}</div>
     <div className=''>{date}</div></div>
   </div>
-  <div className='text-lg mt-2 pr-10'>{read} minutes read  <FontAwesomeIcon onClick={() => handleAddCart (props.element)} className='cursor-pointer' icon={faBookmark} /></div>
+  <div className='text-lg mt-2 pr-10 text-slate-600'>{read} minutes read  <FontAwesomeIcon onClick={() => handleAddCart (props.element)} className='cursor-pointer' icon={faBookmark} /></div>
         </div>
         
         <div className='mt-3 text-3xl font-semibold'>{title}</div>
-        <div className='mt-3'>{tags}</div>
+        <div className='mt-3 text-slate-600'>{tags}</div>
         <div onClick={() => handleAddCart2(props.element)} className='mt-3 text-blue-800 font-bold underline cursor-pointer'>Mark as read</div>
         </div>
     );

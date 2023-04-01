@@ -1,0 +1,20 @@
+[
+    {
+      "id": "642865ca7fe639138db4f099",
+      "question": "Props vs state",
+      "answer": "Props is short for properties and refers to the data passed into a React component from its parent component. Props are immutable, which means that they cannot be modified by the component that receives them. Props are used to customize a component and provide it with the data it needs to render. State refers to the internal data of a React component that can change over time. State is mutable, which means that it can be modified by the component itself. State is used to keep track of the component's current state and to update the user interface in response to user actions or other events."},
+    {
+      "id": "642865caaa8c5262f4178d98",
+      "question": "How does useState work?",
+      "answer": "useState is used to declare a state variable called count with an initial value of 0. It also returns a function called setCount, which we use to update the value of count when the user clicks the Increment button. When the component first renders, useState returns the initial state value (0) and the setCount function. When the user clicks the button, setCount is called with a new value for count (in this case, count + 1), which triggers a re-render of the component with the updated state value."},
+    {
+      "id": "642865ca3dac81f957957f2d",
+      "question": "Purpose of useEffect other than fetching data",
+      "answer": "While useEffect is commonly used for fetching data in React, its purpose is not limited to data fetching only. useEffect is a hook that allows functional components to perform side effects, such as updating the DOM, subscribing to an event, setting a timer, or interacting with the browser's API."
+    },
+    {
+      "id": "642865caa771180008b198ed",
+      "question": "How Does React work?",
+      "answer": "React is a JavaScript library that allows developers to build user interfaces using a declarative and component-based approach. It works by creating a virtual representation of the UI, called the Virtual DOM, which is a lightweight copy of the actual DOM. When a component's state changes, React compares the current Virtual DOM with the previous one and computes the difference. This process is called reconciliation, and it allows React to update only the parts of the DOM that have changed, without touching the rest. This makes React very efficient and fast, even for complex and dynamic user interfaces."
+    }
+  ]
