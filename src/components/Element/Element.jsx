@@ -4,6 +4,8 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Element = (props) => {
     const {thumnail, author, name, title, date, read, tags} = props.element;
+const handleAddCart = props.handleAddCart;
+
     return (
         <div className='mb-8 container mx-auto'>
               <img className='rounded-2xl w-full' src={thumnail} />
@@ -18,12 +20,12 @@ const Element = (props) => {
     <div className='text-xl font-semibold'>{name}</div>
     <div className=''>{date}</div></div>
   </div>
-  <div className='text-lg mt-2 pr-10'>{read}  <FontAwesomeIcon icon={faBookmark} /></div>
+  <div className='text-lg mt-2 pr-10'>{read} minutes read  <FontAwesomeIcon className='cursor-pointer' icon={faBookmark} /></div>
         </div>
         
         <div className='mt-3 text-3xl font-semibold'>{title}</div>
         <div className='mt-3'>{tags}</div>
-        <div className='mt-3 text-blue-800 font-bold underline'>Mark as read</div>
+        <div onClick={() => handleAddCart(props.element)} className='mt-3 text-blue-800 font-bold underline cursor-pointer'>Mark as read</div>
         </div>
     );
 };

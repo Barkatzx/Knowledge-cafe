@@ -6,7 +6,7 @@
       "author": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb6%2Fea%2F0d%2Fb6ea0d32ebce3f712b76d32bda77b8f5.jpg&f=1&nofb=1&ipt=8643fad6a98a79eb229534dbfe3bbf3eec28e2f4a49c06e115b92353ac2394d2&ipo=images",
       "date": "Mar 14 (4 Days ago)",
       "name": "Mr. Raju",
-      "read": "5 minute read",
+      "read": 5,
       "tags": "#beginners #programming"
       
     },
@@ -17,7 +17,7 @@
       "author": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff2%2Fd0%2Fac%2Ff2d0ac079588297a2bd818a4c061ec71.jpg&f=1&nofb=1&ipt=77f280541c565dfadde337d8001ce3927de5016915c8726c09fc408f1433a972&ipo=images",
       "date": "Mar 16 (5 Days ago)",
       "name": "Mr. Setara",
-      "read": "10 min read",
+      "read": 10,
       "tags": "#beginners #programming"
     },
     {
@@ -27,7 +27,7 @@
       "author": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmanofmany.com%2Fwp-content%2Fuploads%2F2019%2F04%2FDavid-Gandy.jpg&f=1&nofb=1&ipt=e46b7f3dc6f84634503625c1c03a76fe2f53f278c1c7a2f3fb5eacbdaf3a4895&ipo=images",
       "date": "Mar 16 (5 Days ago)",
       "name": "Meagan Mullins",
-      "read": "9 min read",
+      "read": 9,
       "tags": "#beginners #programming"
     },
     {
@@ -36,7 +36,7 @@
       "author": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs-i.huffpost.com%2Fgadgets%2Fslideshows%2F326147%2Fslide_326147_3134685_free.jpg&f=1&nofb=1&ipt=1891162262b33091b28c213cb5a85cdbe1ffc1c20b7b034b17ab836dad30bc6e&ipo=images",
       "date": "Mar 16 (5 Days ago)",
       "name": "Fulton Whitfield",
-      "read": "15 min read",
+      "read": 15,
       "tags": "#beginners #programming"
     },
     {
@@ -45,7 +45,7 @@
       "author": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2Fe1%2Fac%2F98%2Fe1ac98fe77c43f7295af7c87b06f1305--smart-men-dress-man.jpg&f=1&nofb=1&ipt=ac385fab18faa69d4598517b99be3016ed6a8a96ac0a563d265923ae54ee8625&ipo=images",
       "date": "Mar 16 (5 Days ago)",
       "name": "Gabrielle Vaughn",
-      "read": "10 min read",
+      "read": 18,
       "tags": "#beginners #programming"
     }
   ]
