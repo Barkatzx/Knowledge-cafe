@@ -26,7 +26,6 @@ const Blogs = () => {
   };
   
   const handleAddCart2 = (element) => {
-    console.log(element)
     setTotalReadTime(totalReadTime => totalReadTime + parseInt(element.read));
   };
   
